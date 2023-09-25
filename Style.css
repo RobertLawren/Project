@@ -1,16 +1,11 @@
-:root{
-background: #002554
-}
-*,*::before, **::after {
-box-sizing: border-box;
-}
+.
 
 .body{
 
 }
 
 .head {
-background:var(--background);
+background-color: #002554;
 text-align:center;
 position: fixed;
 width: 100%;
