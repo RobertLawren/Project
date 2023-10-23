@@ -1,20 +1,159 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<meta name="Viewpoint" content="width-device-width" initial scale="1.0">
+
+<html lang="en-gb">
+
 <head>
-<h1 class="Logo">Logo</h1>
-<nav>
-<ul>
-<li><a href="test">Home</a></li>
-<li><a href="test">Recycling</a></li>
-<li><a href="test">Permits</a></li>
-<li><a href="test">Contact us</a></li>
-</ul>
-</nav>
+
+<Title>Waste Management booking form</Title>
+
+<meta charset="UTF-8">
+
+<meta name="Viewport" content="Width=device-width, initial scale 1.0">
+
+<link rel="Stylesheet" href="Style.css">
+
 </head>
 
+<body>  
 
+<header>
 
+<a href ="#Main" class="Skip" aria-role=>Skip to content</a>
+
+<a href="Index.html">
+
+    <img src="Images/rmbc-logo.svg" class="logo" alt="Rotherham Borough Council">
+
+    </a>
+
+<nav class="Nav-bar">
+
+<ul>
+
+<li><a href="Index.html">Booking form</a></li>
+
+<li><a href="Index.html">Restricted Items</a></li>
+
+<li><a href="Index.html">Bulky Item Collection</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+ 
+
+<Main>
+
+    <div class="alert">
+
+        <h2>Waste Management Site Opening times</h2>
+
+           <p>Our Waste Management sites are currently open between the hours of 10am to 4pm.
+
+               Waste managemnt sites will stop letting  vehicles in 15 minutes before closing time.
+
+           </p>
+
+    </div>
+
+</Main>
+
+    <form class="Booking-form" id ="Main">
+
+        <h1>Waste Management Booking Form</h1>
+
+        <label>First Name</label>
+
+<input type="text" id="First-Name" aria-label="First Name" value="">
+
+<label>Surname</label>
+
+<input type="text" id="Surname" aria-label="Surname" value="" class="radio-button">
+
+<label>Email address</label>
+
+<input type="text" id="Email-address" aria-label="Email address" value="" class="radio-button">
+
+<label>Telephone number</label>
+
+<input type="tel" id="Telephone-number" aria-label="Telephone number" value="" class="radio-button">
+
+<label>Date you wish to attend the Recycling Centre</label><input type="date" id="My-Date-Field">
+
+<label>What type of vehicle will you be going to the Waste recycle centre in?</label>↩
+
+<input type="radio" id="Van" value="Van" aria-label="Van" name="vehicle" class="radio-button"></label>
+
+<label for="Van" class="label-radio">Van</label>
+
+<input type="radio" id="Car" Value="Car" aria-label="Car" name="vehicle" class="radio-button">
+
+<label for="Car" class="label-radio">Car</label>
+
+<p>Which waste recycling centre would you like to attend to?</p>
+
+<input type="Radio" id="Carr-Hill" aria-label="Carr Hill" name="recycling centre" class="radio-button"></input>
+
+<label for="Carr-Hill" class="label-radio">Carr Hill</label>
+
+<input type="Radio" id="Lidget-Lane" aria-label="Lidget Lane" name="recycling centre" class="radio-button"></input>
+
+<label for="Lidget-Lane" class="label-radio">Lidget Lane</label>
+
+<input type="Radio" id="Magilla" aria-label="Magilla" name="recycling centre" class="radio-button"></input>
+
+<label for="Magilla" class="label-radio">Magilla</label>
+
+<input type="Radio" id="Warren-Vale" aria-label="Warren Vale" name="recycling centre" class="radio-button"></input>
+
+<label for="Warren-Vale" class="label-radio">Warren-Vale</label>
+
+</form>
+
+<button>Submit</button>
+
+<button>Clear</button>
+
+   
+
+        </div>
+
+    </div>
+
+    <section class="frequently-asked-questions" aria-label="frequently asked questions">
+
+<button type="button" class="Collapsible-button">Van permits</button>        
+
+<div class="faqs" aria role="region" aria-label="Van Permits">
+
+<p>To be eligible for a permit you will need to be a Rotherham resident.
+
+    We can only grant van and pickup permits when this is the householders own vehicle and they have no alternative vehicle which can access the Household Waste Recycling Centre without a permit.</p>↩
+
+</div>
+
+<button type="button" class="Collapsible-button">Restricted Items</button>        
+
+<div class="faqs" aria role="region" aria-label="Restricted items">
+
+<p>test</p>
+
+</div>
+
+<button type="button" class="Collapsible-button">Bulky Collections</button>        
+
+<div class="faqs" aria-role="region" aria-label="Bulky Collection">
+
+<p>test</p>
+
+</div>
+
+    </section>
+
+    <script src="Script.js"></script>
+
+</body>
 
 </html>
