@@ -146,3 +146,56 @@ margin:auto
 width: 200px;
 
  }
+ input[type=text],[type=tel],[type=date]:focus{
+
+    width: 200px;
+
+    border-color: #002554;
+
+  }
+
+.Collapsible-button{
+
+background-color: white;
+
+color: black;
+
+cursor:pointer;
+
+padding:20px;
+
+width:100%;
+
+border:none;
+
+text-align:left;
+
+outline:none;
+
+font-size: 16px;
+
+}
+
+ 
+
+.active, .Collapsible-button:hover {
+
+background-color: rgba(255, 255, 255, 0.623);
+
+border: solid 5px #ffe13b;
+
+}
+
+ 
+
+.faqs{
+
+padding:0 18px;
+
+display:none;
+
+overflow:hidden;
+
+background-color: white;
+
+}
