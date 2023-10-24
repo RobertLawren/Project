@@ -1,155 +1,96 @@
 <!DOCTYPE html>
-
 <html lang="en-gb">
-
 <head>
-
     <title>Waste Management booking form</title>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="Style.css">
-
 </head>
-
 <body>  
-
     <header>
-
         <a href="#Main" class="Skip" role="button">Skip to content</a>
-
         <a href="Index.html">
-
             <img src="Images/rmbc-logo.svg" class="logo" alt="Rotherham Borough Council">
-
         </a>
-
         <nav class="Nav-bar" role="navigation">
-
             <ul>
-
                 <li><a href="Index.html">Booking form</a></li>
-
                 <li><a href="Index.html">Restricted Items</a></li>
-
                 <li><a href="Index.html">Bulky Item Collection</a></li>
-
             </ul>
-
         </nav>
-
     </header>
 
- 
-
     <main role="main">
-
         <div class="alert">
-
             <h2>Waste Management Site Opening times</h2>
-
-            <p>Our Waste Management sites are currently open between the hours of 10am to 4pm.
-
-                Waste management sites will stop letting vehicles in 15 minutes before closing time.
-
-            </p>
-
+            <p>Our Waste Management sites are currently open between the hours of 10am to 4pm. Waste management sites will stop letting vehicles in 15 minutes before closing time.</p>
         </div>
 
         <form class="Booking-form" id="Main" role="form">
-
             <h1>Waste Management Booking Form</h1>
 
-            <label>First Name</label>
+            <label for="First-Name">First Name</label>
+            <input type="text" id="First-Name" name="first_name" aria-label="First Name" tabindex="1">
 
-            <input type="text" id="First-Name" aria-label="First Name" value="">
+            <label for="Surname">Surname</label>
+            <input type="text" id="Surname" name="surname" aria-label="Surname" tabindex="2">
 
-            <label>Surname</label>
+            <label for="Email-address">Email address</label>
+            <input type="text" id="Email-address" name="email" aria-label="Email address" tabindex="3">
 
-            <input type="text" id="Surname" aria-label="Surname" value="" class="radio-button">
+            <label for="Telephone-number">Telephone number</label>
+            <input type="tel" id="Telephone-number" name="telephone" aria-label="Telephone number" tabindex="4">
 
-            <label>Email address</label>
+            <label for="My-Date-Field">Date you wish to attend the Recycling Centre</label>
+            <input type="date" id="My-Date-Field" name="date" tabindex="5">
 
-            <input type="text" id="Email-address" aria-label="Email address" value="" class="radio-button">
+            <fieldset>
+                <legend>What type of vehicle will you be going to the Waste recycle centre in?</legend>
+                <input type="radio" id="Van" value="Van" aria-label="Van" name="vehicle" class="radio-button" tabindex="6">
+                <label for="Van" class="label-radio">Van</label>
 
-            <label>Telephone number</label>
+                <input type="radio" id="Car" value="Car" aria-label="Car" name="vehicle" class="radio-button" tabindex="7">
+                <label for="Car" class="label-radio">Car</label>
+            </fieldset>
 
-            <input type="tel" id="Telephone-number" aria-label="Telephone number" value="" class="radio-button">
+            <fieldset>
+                <legend>Which waste recycling centre would you like to attend to?</legend>
+                <input type="radio" id="Carr-Hill" value="Carr Hill" aria-label="Carr Hill" name="recycling_centre" class="radio-button" tabindex="8">
+                <label for="Carr-Hill" class="label-radio">Carr Hill</label>
 
-            <label>Date you wish to attend the Recycling Centre</label>
+                <input type="radio" id="Lidget-Lane" value="Lidget Lane" aria-label="Lidget Lane" name="recycling_centre" class="radio-button" tabindex="9">
+                <label for="Lidget-Lane" class="label-radio">Lidget Lane</label>
 
-            <input type="date" id="My-Date-Field">
+                <input type="radio" id="Magilla" value="Magilla" aria-label="Magilla" name="recycling_centre" class="radio-button" tabindex="10">
+                <label for="Magilla" class="label-radio">Magilla</label>
 
-            <label>What type of vehicle will you be going to the Waste recycle centre in?</label>
+                <input type="radio" id="Warren-Vale" value="Warren Vale" aria-label="Warren Vale" name="recycling_centre" class="radio-button" tabindex="11">
+                <label for="Warren-Vale" class="label-radio">Warren-Vale</label>
+            </fieldset>
 
-            <input type="radio" id="Van" value="Van" aria-label="Van" name="vehicle" class="radio-button">
-
-            <label for="Van" class="label-radio">Van</label>
-
-            <input type="radio" id="Car" value="Car" aria-label="Car" name="vehicle" class="radio-button">
-
-            <label for="Car" class="label-radio">Car</label>
-
-            <p>Which waste recycling centre would you like to attend to?</p>
-
-            <input type="radio" id="Carr-Hill" value="Carr Hill" aria-label="Carr Hill" name="recycling centre" class="radio-button">
-
-            <label for="Carr-Hill" class="label-radio">Carr Hill</label>
-
-            <input type="radio" id="Lidget-Lane" value="Lidget Lane" aria-label="Lidget Lane" name="recycling centre" class="radio-button">
-
-            <label for="Lidget-Lane" class="label-radio">Lidget Lane</label>
-
-            <input type="radio" id="Magilla" value="Magilla" aria-label="Magilla" name="recycling centre" class="radio-button">
-
-            <label for="Magilla" class="label-radio">Magilla</label>
-
-            <input type="radio" id="Warren-Vale" value="Warren Vale" aria-label="Warren Vale" name="recycling centre" class="radio-button">
-
-            <label for="Warren-Vale" class="label-radio">Warren-Vale</label>
-
-            <button type="submit">Submit</button>
-
-            <button type="reset">Clear</button>
-
+            <button type="submit" tabindex="12">Submit</button>
+            <button type="reset" tabindex="13">Clear</button>
         </form>
 
         <section class="frequently-asked-questions" aria-label="frequently asked questions">
-
-            <button type="button" class="Collapsible-button" role="button">Van permits</button>        
-
+            <button type="button" class="Collapsible-button" role="button" tabindex="14">Van permits</button>        
             <div class="faqs" role="region" aria-label="Van Permits">
-
-                <p>To be eligible for a permit you will need to be a Rotherham resident.
-
-                    We can only grant van and pickup permits when this is the householders own vehicle and they have no alternative vehicle which can access the Household Waste Recycling Centre without a permit.</p>
-
+                <p>To be eligible for a permit you will need to be a Rotherham resident. We can only grant van and pickup permits when this is the householders own vehicle and they have no alternative vehicle which can access the Household Waste Recycling Centre without a permit.</p>
             </div>
 
-            <button type="button" class="Collapsible-button" role="button">Restricted Items</button>        
-
+            <button type="button" class="Collapsible-button" role="button" tabindex="15">Restricted Items</button>        
             <div class="faqs" role="region" aria-label="Restricted items">
-
                 <p>test</p>
-
             </div>
 
-            <button type="button" class="Collapsible-button" role="button">Bulky Collections</button>        
-
+            <button type="button" class="Collapsible-button" role="button" tabindex="16">Bulky Collections</button>        
             <div class="faqs" role="region" aria-label="Bulky Collection">
-
                 <p>test</p>
-
             </div>
-
         </section>
 
         <script src="Script.js"></script>
-
     </main>
-
 </body>
-
 </html>
