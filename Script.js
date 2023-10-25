@@ -1,11 +1,11 @@
-const collapsibleButtons = document.getElementsByClassName("Collapsible-button");
+var collapsibleButtons = document.getElementsByClassName("Collapsible-button");
 
 for (var i = 0; i < collapsibleButtons.length; i++) {
   collapsibleButtons[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var faqs = this.nextElementSibling;
     if (faqs.style.display === "block") {
-      faqs.style.display = "none";
+      faqs.style.display = "block";
     } else {
       faqs.style.display = "block";
     }
