@@ -2,35 +2,21 @@ html {
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  .Nav-bar {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 200px;
-    background-color: #f2f2f2;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
+/* Styles for screens smaller than 600px */
+@media (max-width: 599px) {
+  /* Add your mobile styles here */
+  .Nav-bar ul {
+    display: none;
   }
-  
-  .Nav-bar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    background-color: #002554;
-    color: #000;
+  .Nav-bar.active ul {
     display: block;
-    transition: 0.3s;
-    box-shadow: 0 0 5px #fff;
   }
-  
-  .Nav-bar a:focus,
-  .Nav-bar a:hover {
-    box-shadow: 0 0 5px #fff;
+  .Nav-bar ul li {
+    display: block;
+  }
+  .Nav-bar ul li a {
+    display: block;
+    padding: 10px;
   }
 }
 
