@@ -75,9 +75,10 @@ nav a {
   cursor: pointer;
 }
 
-.Nav-bar a:focus,
-.Nav-bar a:hover {
-  box-shadow: 0 0 5px #fff;
+.active,
+.nav-link:focus,
+.nav-link:hover {
+  border: solid 5px #ffe13b;
 }
 
 .alert {
