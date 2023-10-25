@@ -20,6 +20,8 @@ html {
     list-style: none;
     justify-content: center;
   }
+  .radio-button {
+    display: block;
 }
 
 
@@ -128,4 +130,4 @@ input[type=text],
   display: none;
   overflow: hidden;
   background-color: white;
-}
+}}
