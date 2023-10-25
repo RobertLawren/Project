@@ -1,4 +1,4 @@
-var collapsibleButtons = document.getElementsByClassName("Collapsible-button");
+const collapsibleButtons = document.getElementsByClassName("Collapsible-button");
 
 for (var i = 0; i < collapsibleButtons.length; i++) {
   collapsibleButtons[i].addEventListener("click", function() {
@@ -20,7 +20,7 @@ for (var i = 0; i < collapsibleButtons.length; i++) {
       // Toggle the active class on the button
       collapsibleButtons[i].classList.toggle('active');
       // Get the content of the collapsible box
-      const content = this.parentElement.querySelector('.faqs');
+      const content = collapsibleButtons[i].nextElementSibling;
       // Toggle the display of the content
       if (content.style.display === 'block') {
         content.style.display = 'none';
