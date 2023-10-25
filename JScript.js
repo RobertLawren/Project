@@ -1,4 +1,4 @@
-collapsibleButtons = document.getElementsByClassName("Collapsible-button");
+var collapsibleButtons = document.getElementsByClassName("Collapsible-button");
 
 for (var i = 0; i < collapsibleButtons.length; i++) {
   collapsibleButtons[i].addEventListener("click", function() {
@@ -28,6 +28,5 @@ for (var i = 0; i < collapsibleButtons.length; i++) {
         content.style.display = 'block';
       }
     }
-  });+
-  3
+  });
 }
