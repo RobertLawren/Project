@@ -123,7 +123,7 @@ input[type=text],
   border: solid 5px #ffe13b;
 }
 
-.faqs {
+.faqs1, .faqs2, .faqs3 {
   padding: 0 18px;
   display: none;
   overflow: hidden;
