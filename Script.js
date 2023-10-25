@@ -20,7 +20,7 @@ for (var i = 0; i < collapsibleButtons.length; i++) {
       // Toggle the active class on the button
       collapsibleButtons[i].classList.toggle('active');
       // Get the content of the collapsible box
-      const content = collapsibleButtons[i].nextElementSibling;
+      const content = this.parentElement.querySelector('.faqs');
       // Toggle the display of the content
       if (content.style.display === 'block') {
         content.style.display = 'none';
