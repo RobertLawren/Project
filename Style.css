@@ -1,212 +1,143 @@
-
 html {
-
-    box-sizing: border-box;
-    
-    }
-    
-    @media (max-width: 768px) {
-      .Nav-bar {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 200px;
-        background-color: #f2f2f2;
-        overflow-x: hidden;
-        padding-top: 60px;
-        transition: 0.5s;
-      }
-      
-      .Nav-bar a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 20px;
-        background-color: #002554;
-        color: #000;
-        display: block;
-        transition: 0.3s;
-      }
-      .Nav-bar ul li a:focus,
-.Nav-bar ul li a:hover {
-  text-shadow: 0 0 5px #ffe13b;
+  box-sizing: border-box;
 }
-    }     
-   
-    
-     
-    
-    @media (min-width: 769px) and (max-width: 1024px) {
-    
-        /* Styles for desktop devices */
-        
-        }
-    
-     
-    
-    .Skip {
-        position: absolute !important;
-        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-        clip: rect(1px, 1px, 1px, 1px);
-        padding: 0 !important;
-        border: 0 !important;
-        height: 1px !important;
-        width: 1px !important;
-        overflow: hidden; }
-    
-    header{
-    
-        background-color: white;
-    
-        height:  125px;
-    
-        margin: 15px;
-    
-    }
-    
-    .logo{
-    
-    padding-top: 10px;
-    
-    height: 50px;
-    
-    }
-    
-    nav ul{
-    
-    display:flex;
-    
-     list-style: none;
-    
-     justify-content: space-around;
-    
-    }
-    
-    nav a{
-    
-    background-color: #002554;
-    
-    color: white;
-    
-    display: inline-block;
-    
-    padding: 10px;
-    
-    text-decoration: none;
-    
-    cursor: pointer;
-    
-    }
-    .Nav-bar ul li a:focus,
-    .Nav-bar ul li a:hover {
-      text-shadow: 0 0 5px #ffe13b;
-    }
-    
-    .alert {
-    
-        Padding:20px;
-    
-        background-color: #ffe13b;
-    
-        color:black;
-    
-        margin: 15px;
-    
-        }
-    
-       
-    
-    body {
-    
-    background-color:#002554 ;
-    
-    }
-    
-     
-    
-    .radio-button{
-    
-        display: inline;
-    
-        }
-    
-     
-    
-    .Booking-form {
-    
+
+@media (max-width: 768px) {
+  .Nav-bar {
     display: flex;
-    
     flex-direction: column;
-    
-    justify-items: center;
-    
-    align-items:center;
-    
-    width: 500px;
-    
-    background-color: white;
-    
-    margin:auto
-    
-    }
-    
-     input[type=text],[type=tel],[type=date] {
-    
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
     width: 200px;
-    
-     }
-     input[type=text],[type=tel],[type=date]:focus{
-    
-        width: 200px;
-    
-        border-color: #002554;
-    
-      }
-    
-    .Collapsible-button{
-    
-    background-color: white;
-    
-    color: black;
-    
-    cursor:pointer;
-    
-    padding:20px;
-    
-    width:100%;
-    
-    border:none;
-    
-    text-align:left;
-    
-    outline:none;
-    
-    font-size: 16px;
-    
-    }
-    
-     
-    
-    .active, .Collapsible-button:hover {
-    
-    background-color: rgba(255, 255, 255, 0.623);
-    
-    border: solid 5px #ffe13b;
-    
-    }
-    
-     
-    
-    .faqs{
-    
-    padding:0 18px;
-    
-    display:none;
-    
-    overflow:hidden;
-    
-    background-color: white;
-    
-    }
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .Nav-bar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #002554;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .Nav-bar a:focus,
+  .Nav-bar a:hover {
+    text-shadow: 0 0 5px #fff;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for desktop devices */
+}
+
+.Skip {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+header {
+  background-color: white;
+  height: 125px;
+  margin: 15px;
+}
+
+.logo {
+  padding-top: 10px;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+nav a {
+  background-color: #002554;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Nav-bar ul li a:focus,
+.Nav-bar ul li a:hover {
+  text-shadow: 0 0 5px #fff;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #ffe13b;
+  color: black;
+  margin: 15px;
+}
+
+body {
+  background-color: #002554;
+}
+
+.radio-button {
+  display: inline;
+}
+
+.Booking-form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 500px;
+  background-color: white;
+  margin: auto;
+}
+
+input[type=text],
+[type=tel],
+[type=date] {
+  width: 200px;
+}
+
+input[type=text],
+[type=tel],
+[type=date]:focus {
+  width: 200px;
+  border-color: #002554;
+}
+
+.Collapsible-button {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+}
+
+.active,
+.Collapsible-button:hover {
+  background-color: rgba(255, 255, 255, 0.623);
+  border: solid 5px #ffe13b;
+}
+
+.faqs {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+}
