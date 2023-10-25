@@ -18,9 +18,9 @@ for (var i = 0; i < collapsibleButtons.length; i++) {
       // Prevent the default action of the button
       event.preventDefault();
       // Toggle the active class on the button
-      collapsibleButtons[i].classList.toggle('active');
+      this.classList.toggle('active');
       // Get the content of the collapsible box
-      const content = collapsibleButtons[i].nextElementSibling;
+      const content = this.nextElementSibling;
       // Toggle the display of the content
       if (content.style.display === 'block') {
         content.style.display = 'none';
@@ -28,5 +28,4 @@ for (var i = 0; i < collapsibleButtons.length; i++) {
         content.style.display = 'block';
       }
     }
-  });
-}
+  })};
