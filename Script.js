@@ -1,31 +1,66 @@
 // Get all collapsible buttons and the FAQs element
-const collapsibleButtons = document.querySelectorAll('.Collapsible-button');
-const faqs = document.querySelectorAll('.faq');
+const button1 = document.querySelector('.button1');
+const button2 = document.querySelector('.button2');
+const button3 = document.querySelector('.button3');
+const faq1 = document.querySelector('.faq1');
+const faq2 = document.querySelector('.faq2');
+const faq3 = document.querySelector('.faq3');
 
-// Loop through each button and add event listeners
-for (let i = 0; i < collapsibleButtons.length; i++) {
-  // Add a click listener to the button
-  collapsibleButtons[i].addEventListener('click', () => {
-    // Get the corresponding FAQ element
-    const faq = collapsibleButtons[i].nextElementSibling;
-    // Toggle the display of the FAQ element
-    faq.style.display = faq.style.display === 'block' ? 'none' : 'block';
+// Add a click listener to each button
+button1.addEventListener('click', () => {
+  // Toggle the display of the corresponding FAQ element
+  faq1.style.display = faq1.style.display === 'block' ? 'none' : 'block';
+  // Toggle the active class on the button
+  button1.classList.toggle('active');
+});
+
+button2.addEventListener('click', () => {
+  // Toggle the display of the corresponding FAQ element
+  faq2.style.display = faq2.style.display === 'block' ? 'none' : 'block';
+  // Toggle the active class on the button
+  button2.classList.toggle('active');
+});
+
+button3.addEventListener('click', () => {
+  // Toggle the display of the corresponding FAQ element
+  faq3.style.display = faq3.style.display === 'block' ? 'none' : 'block';
+  // Toggle the active class on the button
+  button3.classList.toggle('active');
+});
+
+// Add a keyboard event listener to each button
+button1.addEventListener('keydown', event => {
+  // If the user presses the Enter key or the Space key
+  if (event.code === 'Enter' || event.code === 'Space') {
+    // Prevent the default action of the button
+    event.preventDefault();
+    // Toggle the display of the corresponding FAQ element
+    faq1.style.display = faq1.style.display === 'block' ? 'none' : 'block';
     // Toggle the active class on the button
-    collapsibleButtons[i].classList.toggle('active');
-  });
+    button1.classList.toggle('active');
+  }
+});
 
-  // Add a keyboard event listener to the button
-  collapsibleButtons[i].addEventListener('keydown', event => {
-    // If the user presses the Enter key or the Space key
-    if (event.code === 'Enter' || event.code === 'Space') {
-      // Prevent the default action of the button
-      event.preventDefault();
-      // Get the corresponding FAQ element
-      const faq = collapsibleButtons[i].nextElementSibling;
-      // Toggle the display of the FAQ element
-      faq.style.display = faq.style.display === 'block' ? 'none' : 'block';
-      // Toggle the active class on the button
-      collapsibleButtons[i].classList.toggle('active');
-    }
-  });
-}
+button2.addEventListener('keydown', event => {
+  // If the user presses the Enter key or the Space key
+  if (event.code === 'Enter' || event.code === 'Space') {
+    // Prevent the default action of the button
+    event.preventDefault();
+    // Toggle the display of the corresponding FAQ element
+    faq2.style.display = faq2.style.display === 'block' ? 'none' : 'block';
+    // Toggle the active class on the button
+    button2.classList.toggle('active');
+  }
+});
+
+button3.addEventListener('keydown', event => {
+  // If the user presses the Enter key or the Space key
+  if (event.code === 'Enter' || event.code === 'Space') {
+    // Prevent the default action of the button
+    event.preventDefault();
+    // Toggle the display of the corresponding FAQ element
+    faq3.style.display = faq3.style.display === 'block' ? 'none' : 'block';
+    // Toggle the active class on the button
+    button3.classList.toggle('active');
+  }
+});
