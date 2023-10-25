@@ -1,13 +1,14 @@
-// Get all collapsible buttons and the FAQs element
 const collapsibleButtons = document.querySelectorAll('.Collapsible-button');
-const faqs = document.querySelector('.faqs');
+const faqs = document.querySelectorAll('.faq');
 
 // Loop through each button and add event listeners
 for (let i = 0; i < collapsibleButtons.length; i++) {
   // Add a click listener to the button
   collapsibleButtons[i].addEventListener('click', () => {
-    // Toggle the display of the FAQs element
-    faqs.style.display = faqs.style.display === 'block' ? 'none' : 'block';
+    // Get the corresponding FAQ element
+    const faq = faqs[i];
+    // Toggle the display of the FAQ element
+    faq.style.display = faq.style.display === 'block' ? 'none' : 'block';
   });
 
   // Add a keyboard event listener to the button
@@ -18,14 +19,10 @@ for (let i = 0; i < collapsibleButtons.length; i++) {
       event.preventDefault();
       // Toggle the active class on the button
       event.target.classList.toggle('active');
-      // Get the content of the collapsible box
-      const content = event.target.nextElementSibling;
-      // Toggle the display of the content
-      if (content.style.display === 'block') {
-        content.style.display = 'none';
-      } else {
-        content.style.display = 'block';
-      }
+      // Get the corresponding FAQ element
+      const faq = faqs[i];
+      // Toggle the display of the FAQ element
+      faq.style.display = faq.style.display === 'block' ? 'none' : 'block';
     }
   });
 }
