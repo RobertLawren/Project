@@ -28,4 +28,8 @@ for (var i = 0; i < collapsibleButtons.length; i++) {
         content.style.display = 'block';
       }
     }
+  });
+  collapsibleButtons[i].addEventListener('keydown', event => {
+    console.log('Keydown event triggered');
+    // Rest of the code
   })};
