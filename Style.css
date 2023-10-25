@@ -4,11 +4,27 @@ html {
 
 /* Styles for screens smaller than 600px */
 @media (max-width: 599px) {
+  /* Hide the navigation bar */
+  .Nav-bar {
+    display: none;
+  }
   
   /* Remove the scrollbar */
   body {
     overflow: hidden;
   }
+  
+  /* Adjust the navigation links */
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  .radio-button {
+    display: block;
+}
+
+
 .Skip {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -18,7 +34,6 @@ html {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-   visibility: hidden !important;
 }
 
 header {
@@ -30,6 +45,27 @@ header {
 .logo {
   padding-top: 10px;
   height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+nav a {
+  background-color: #002554;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active,
+.nav-link:focus,
+.nav-link:hover {
+  border: solid 5px #ffe13b;
 }
 
 .alert {
