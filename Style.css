@@ -20,8 +20,12 @@ html {
     list-style: none;
     justify-content: center;
   }
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
   .radio-button {
-    display: block;
+    margin-bottom: 10px;
   }
 }
 
