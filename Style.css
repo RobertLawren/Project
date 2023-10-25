@@ -25,11 +25,12 @@ html {
     color: #000;
     display: block;
     transition: 0.3s;
+    box-shadow: 0 0 5px #fff;
   }
   
   .Nav-bar a:focus,
   .Nav-bar a:hover {
-    text-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 5px #fff;
   }
 }
 
@@ -74,9 +75,9 @@ nav a {
   cursor: pointer;
 }
 
-.Nav-bar ul li a:focus,
-.Nav-bar ul li a:hover {
-  text-shadow: 0 0 5px #fff;
+.Nav-bar a:focus,
+.Nav-bar a:hover {
+  box-shadow: 0 0 5px #fff;
 }
 
 .alert {
