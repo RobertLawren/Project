@@ -4,19 +4,14 @@ html {
 
 /* Styles for screens smaller than 600px */
 @media (max-width: 599px) {
-  /* Add your mobile styles here */
-  .Nav-bar ul {
+  /* Hide the navigation bar */
+  .Nav-bar {
     display: none;
   }
-  .Nav-bar.active ul {
-    display: block;
-  }
-  .Nav-bar ul li {
-    display: block;
-  }
-  .Nav-bar ul li a {
-    display: block;
-    padding: 10px;
+  
+  /* Remove the scrollbar */
+  body {
+    overflow: hidden;
   }
 }
 
