@@ -27,6 +27,10 @@ html {
   .radio-button {
     margin-bottom: 10px;
   }
+  legend {
+    margin-bottom: 10px;
+  }
+}
 }
 
 .Skip {
