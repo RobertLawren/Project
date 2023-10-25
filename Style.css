@@ -3,7 +3,37 @@ html {
 
     box-sizing: border-box;
     
-    }+++++++++++++++++++
+    }
+    
+    @media (max-width: 768px) {
+      .Nav-bar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 200px;
+        background-color: #f2f2f2;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+      }
+      
+      .Nav-bar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        background-color: #002554;
+        color: #000;
+        display: block;
+        transition: 0.3s;
+      }
+      .Nav-bar ul li a:focus,
+.Nav-bar ul li a:hover {
+  text-shadow: 0 0 5px #ffe13b;
+}
+    }     
    
     
      
@@ -68,6 +98,10 @@ html {
     
     cursor: pointer;
     
+    }
+    .Nav-bar ul li a:focus,
+    .Nav-bar ul li a:hover {
+      text-shadow: 0 0 5px #ffe13b;
     }
     
     .alert {
