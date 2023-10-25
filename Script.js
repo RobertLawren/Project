@@ -1,13 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // Get all collapsible buttons and the corresponding FAQ sections
-  const buttons = document.querySelectorAll('.Collapsible-button');
-  const faqs = document.querySelectorAll('.faqs');
+const collapsibleButtons = document.querySelectorAll('.Collapsible-button');
 
-  // Add a click listener to each button
-  buttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      // Toggle the display of the corresponding FAQ element
-      faqs[index].classList.toggle('active');
-    });
+collapsibleButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const faqSection = button.nextElementSibling;
+    faqSection.style.display = faqSection.style.display === 'block' ? 'none' : 'block';
   });
 });
