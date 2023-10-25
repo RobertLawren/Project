@@ -8,8 +8,8 @@ collapsibleButton.addEventListener('click', () => {
   faqs.style.display = faqs.style.display === 'block' ? 'none' : 'block';
 });
 
-// Add a keyboard event listener to each button
-collapsibleButtons[i].addEventListener('keydown', event => {
+// Add a keyboard event listener to the button
+collapsibleButton.addEventListener('keydown', event => {
   // If the user presses the Enter key or the Space key
   if (event.code === 'Enter' || event.code === 'Space') {
     // Prevent the default action of the button
