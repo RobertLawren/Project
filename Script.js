@@ -18,9 +18,9 @@ for (var i = 0; i < collapsibleButtons.length; i++) {
       // Prevent the default action of the button
       event.preventDefault();
       // Toggle the active class on the button
-      this.classList.toggle('active');
+      event.target.classList.toggle('active');
       // Get the content of the collapsible box
-      const content = this.nextElementSibling;
+      const content = event.target.nextElementSibling;
       // Toggle the display of the content
       if (content.style.display === 'block') {
         content.style.display = 'none';
@@ -29,7 +29,4 @@ for (var i = 0; i < collapsibleButtons.length; i++) {
       }
     }
   });
-  collapsibleButtons[i].addEventListener('keydown', event => {
-    console.log('Keydown event triggered');
-    // Rest of the code
-  })};
+}
