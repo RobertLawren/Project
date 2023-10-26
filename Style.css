@@ -87,10 +87,7 @@ body {
   display: inline;
 }
 
-.form input,
-.form select,
-.form textarea {
-  font-size: 1em;
+
 }
 .Booking-form {
   display: flex;
@@ -100,6 +97,7 @@ body {
   width: 500px;
   background-color: white;
   margin: auto;
+  font-size: 16px;
 }
 
 input[type=text],
