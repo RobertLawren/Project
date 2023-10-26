@@ -91,13 +91,12 @@ body {
 }
 .Booking-form {
   display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
+  flex-direction: row;
   width: 500px;
   background-color: white;
   margin: auto;
   font-size: 16px;
+}
 }
 
 input[type=text],
