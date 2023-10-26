@@ -87,6 +87,11 @@ body {
   display: inline;
 }
 
+.form input,
+.form select,
+.form textarea {
+  font-size: 1em;
+}
 .Booking-form {
   display: flex;
   flex-direction: column;
