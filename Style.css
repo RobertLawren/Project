@@ -20,10 +20,14 @@ html {
     list-style: none;
     justify-content: center;
   }
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
   .radio-button {
-    display: block;
+    margin-bottom: 10px;
+  }
 }
-
 
 .Skip {
   position: absolute !important;
@@ -93,12 +97,17 @@ body {
   margin: auto;
 }
 
-
+input[type=text],
+[type=tel],
+[type=date] {
+  width: 200px;
+}
 
 input[type=text],
 [type=tel],
 [type=date]:focus {
-border-color: #002554;
+  width: 200px;
+  border-color: #002554;
 }
 
 .Collapsible-button {
@@ -125,4 +134,4 @@ border-color: #002554;
   display: none;
   overflow: hidden;
   background-color: white;
-}}
+}
