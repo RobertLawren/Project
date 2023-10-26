@@ -93,17 +93,12 @@ body {
   margin: auto;
 }
 
-input[type=text],
-[type=tel],
-[type=date] {
-  width: 200px;
-}
+
 
 input[type=text],
 [type=tel],
 [type=date]:focus {
-  width: 200px;
-  border-color: #002554;
+border-color: #002554;
 }
 
 .Collapsible-button {
