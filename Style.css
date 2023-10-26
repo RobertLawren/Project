@@ -1,7 +1,5 @@
 html {
   box-sizing: border-box;
-  font-size: 16px;
-  
 }
 
 /* Styles for screens smaller than 600px */
@@ -22,14 +20,10 @@ html {
     list-style: none;
     justify-content: center;
   }
-  fieldset {
-    display: flex;
-    flex-direction: column;
-  }
   .radio-button {
-    margin-bottom: 10px;
-  }
+    display: block;
 }
+
 
 .Skip {
   position: absolute !important;
@@ -136,4 +130,4 @@ input[type=text],
   display: none;
   overflow: hidden;
   background-color: white;
-}
+}}
