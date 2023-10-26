@@ -1,9 +1,3 @@
-window.addEventListener('scroll', function() {
-  if (document.documentElement.scrollTop >= 300) {
-    document.documentElement.style.zoom = 100;
-  }
-});
-
 var collapsibleButtons = document.getElementsByClassName("Collapsible-button");
 
 for (var i = 0; i < collapsibleButtons.length; i++) {
