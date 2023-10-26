@@ -71,14 +71,14 @@ nav a {
 .nav-link:hover {
   border: solid 5px #ffe13b;
 }
-/* Yelow box to alert customer to a change to the opening times*/
+
 .alert {
   padding: 20px;
   background-color: #ffe13b;
   color: black;
   margin: 15px;
 }
-/* Sets the back ground to a dark blue */
+
 body {
   background-color: #002554;
 }
@@ -125,7 +125,7 @@ outline: 1px solid #002554;
   outline: none;
   font-size: 16px;
 }
-/* When the collapsible buttons are hovered over, active or in a focus state a border will appear which will be a solid yellow line */ 
+
 .active,
 .collapsible-button:focus,
 .Collapsible-button:hover {
