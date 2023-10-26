@@ -1,6 +1,8 @@
 html {
   box-sizing: border-box;
-  }
+  font-size: 16px;
+  
+}
 
 /* Styles for screens smaller than 600px */
 @media (max-width: 599px) {
@@ -28,7 +30,7 @@ html {
     margin-bottom: 10px;
   }
 }
-/* Hides skip content button for users that don't use a screen reader*/
+
 .Skip {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -39,7 +41,7 @@ html {
   width: 1px !important;
   overflow: hidden;
 }
-/* Sets the size of the heading bar along with the color and leaves a margin around the edge for a cleaner display*/
+
 header {
   background-color: white;
   height: 125px;
@@ -87,30 +89,27 @@ body {
   display: inline;
 }
 
-
-}
 .Booking-form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
   width: 500px;
   background-color: white;
   margin: auto;
-  font-size: 16px;
-}
 }
 
 input[type=text],
 [type=tel],
 [type=date] {
   width: 200px;
-outline: 1px solid #002554;
 }
 
 input[type=text],
 [type=tel],
 [type=date]:focus {
   width: 200px;
-outline: 1px solid #002554;
+  border-color: #002554;
 }
 
 .Collapsible-button {
@@ -131,11 +130,10 @@ outline: 1px solid #002554;
   background-color: rgba(255, 255, 255, 0.623);
   border: solid 5px #ffe13b;
 }
-/* hides the content within the collapsible buttons before the elements are clickec*/ 
+
 .faqs1, .faqs2, .faqs3 {
   padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: white;
-  font-size: 16px;
 }
